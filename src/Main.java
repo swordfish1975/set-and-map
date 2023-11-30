@@ -1,9 +1,10 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Main {
 
   public static void main(String[] args) {
-    ArrayList<String> todoList = new ArrayList<>();
+    HashSet<String> todoList = new HashSet<>();
     todoList.add("Купить молоко");
     todoList.add("Купить лошадь");
     todoList.add("Покормить кота");
@@ -13,7 +14,7 @@ public class Main {
     printTodoList(todoList);
 
   }
-  public static void printTodoList (ArrayList<String> todoList) {
+  public static void printTodoList (HashSet<String> todoList) {
     for(String item: todoList) {
       System.out.println(item);
     }

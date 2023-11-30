@@ -10,10 +10,13 @@ public class Main {
     todoList.add("Купить лошадь");
     todoList.add("Купить молоко");
 
+    printTodoList(todoList);
+
+  }
+  public static void printTodoList (ArrayList<String> todoList) {
     for(String item: todoList) {
       System.out.println(item);
     }
-
   }
 
 }

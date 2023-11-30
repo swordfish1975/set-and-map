@@ -9,6 +9,9 @@ public class Main {
     todoList.add("Купить лошадь");
     todoList.add("Покормить кота");
     todoList.add("Купить лошадь");
+    boolean horseAgain = todoList.add("Купить лошадь");
+    System.out.println("Значение переменной при добавлении повторяющегося значения: "
+        + horseAgain + "\n");
     todoList.add("Купить молоко");
 
     printTodoList(todoList);

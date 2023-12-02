@@ -12,17 +12,7 @@ public class Main {
 
     printTodoList(todoList);
 
-    // метод remove - удаление из коллекции объекта
-    todoList.remove("Купить лошадь");
-
-    // метод isEmpty() - возвращает true если коллекция пустая
-    if (todoList.isEmpty()) {
-      System.out.println("Коллекция пустая");
-    } else {
-      System.out.println("Коллекция не пустая");
-    }
-
-    printTodoList(todoList);
+    System.out.println("Размер коллекции = " + todoList.size());
 
   }
   public static void printTodoList (HashSet<String> todoList) {

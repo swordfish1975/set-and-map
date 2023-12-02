@@ -12,8 +12,9 @@ public class Main {
 
     printTodoList(todoList);
 
-    // метод clear -очищение коллекции
-    todoList.clear();
+    // метод contains - поиск в коллекции по значению
+    System.out.println(todoList.contains("computer"));
+    System.out.println(todoList.contains("Купить лошадь"));
     // метод isEmpty() - возвращает true если коллекция пустая
     if (todoList.isEmpty()) {
       System.out.println("Коллекция пустая");

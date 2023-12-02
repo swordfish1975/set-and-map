@@ -12,15 +12,17 @@ public class Main {
 
     printTodoList(todoList);
 
-    // метод contains - поиск в коллекции по значению
-    System.out.println(todoList.contains("computer"));
-    System.out.println(todoList.contains("Купить лошадь"));
+    // метод remove - удаление из коллекции объекта
+    todoList.remove("Купить лошадь");
+
     // метод isEmpty() - возвращает true если коллекция пустая
     if (todoList.isEmpty()) {
       System.out.println("Коллекция пустая");
     } else {
       System.out.println("Коллекция не пустая");
     }
+
+    printTodoList(todoList);
 
   }
   public static void printTodoList (HashSet<String> todoList) {

@@ -12,6 +12,7 @@ public class Main {
     todoList.add(new Task("Купить лошадь"));
     todoList.add(new Task("Купить молоко"));
 
+    System.out.println(todoList.ceiling(new Task("Купить мол ")));
     printTodoList(todoList);
 
     System.out.println("Размер коллекции = " + todoList.size());

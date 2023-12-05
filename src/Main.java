@@ -5,7 +5,7 @@ import java.util.TreeSet;
 public class Main {
 
   public static void main(String[] args) {
-    TreeSet<Task> todoList = new TreeSet<>();
+    TreeSet<Task> todoList = new TreeSet<>(new TaskComparator());
     todoList.add(new Task("Купить молоко"));
     todoList.add(new Task("Купить лошадь"));
     todoList.add(new Task("Покормить кота"));

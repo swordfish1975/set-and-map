@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 
-public class Task implements Comparable<Task>{
+public class Task {
   private String name;
   private final LocalDateTime time;
   private boolean isDone;
@@ -39,8 +39,4 @@ public class Task implements Comparable<Task>{
         '}';
   }
 
-  @Override
-  public int compareTo(Task task) {
-    return this.getTime().compareTo(task.getTime());
-  }
 }
